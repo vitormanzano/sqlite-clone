@@ -294,7 +294,9 @@ Table* db_open(const char* filename)
 
     Table* table = malloc(sizeof(Table));
     table->pager = pager;
-    table->num_rows = 0;
+    table->num_rows = num_rows;
+
+    return table;
 }
 
 void free_table(Table* table)
