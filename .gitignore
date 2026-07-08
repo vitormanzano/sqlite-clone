@@ -7,6 +7,13 @@
 *.obj
 *.elf
 
+# Executable
+src/db
+
+# .db
+src/*.db
+src/spec/*.db
+
 # Linker output
 *.ilk
 *.map
